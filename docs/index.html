@@ -15,50 +15,47 @@
 <body>
 
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-    <header class="sticky-top">
-        <!-- Navbar -->
-        <div class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
-            <div class="navbar">
-                <a class="navbar-brand " href="#">
-                    <img src="https://www.flaticon.com/svg/static/icons/svg/841/841364.svg" width="40" height="40"
-                         alt="Home">
-                </a>
-                <a class="navbar-brand active" href="#"><h3>Combined</h3></a>
-            </div>
-            <div class="navbar col">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
-                        aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarToggler">
-                    <ul class="navbar-nav mr-auto">
-                        <ul class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" role="button">History
-                                of the Internet</a>
-                            <nav class="dropdown-menu">
-                                <a class="dropdown-item" href="">Invention of the Internet</a>
-                                <a class="dropdown-item" href="">Browser Wars</a>
-                                <a class="dropdown-item" href="">Internet Search</a>
-                                <a class="dropdown-item" href="">Dot Com Bubble</a>
-                                <a class="dropdown-item" href="">Important People</a>
-                            </nav>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="#">
+                <img src="https://www.flaticon.com/svg/static/icons/svg/841/841364.svg" width="40" height="40"
+                     alt="Home">
+            </a>
+            <a class="navbar-brand active" href="#"><h3>Combined</h3></a>
+            <button class="navbar-toggler p-0 border-0" type="button" data-bs-toggle="offcanvas"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                           aria-expanded="false">History of the Internet</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="invention.html">Invention of the Internet</a></li>
+                            <li><a class="dropdown-item" href="browser.html">Browser Wars</a></li>
+                            <li><a class="dropdown-item" href="searching.html">Internet Search</a></li>
+                            <li><a class="dropdown-item" href="bubble.html">Dot Com Bubble</a></li>
+                            <li><a class="dropdown-item" href="people.html">Important People</a></li>
                         </ul>
-                        <ul class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-white" data-toggle="dropdown" role="button">How the
-                                Internet works</a>
-                            <nav class="dropdown-menu text-primary">
-                                <a class="dropdown-item" href="">Domain names and ICANN</a>
-                                <a class="dropdown-item" href="">IP Addresses, Packets and Routing</a>
-                                <a class="dropdown-item" href="">DNS</a>
-                                <a class="dropdown-item" href="">HTTP and HTTPS protocols</a>
-                                <a class="dropdown-item" href="">W3C and HTML and CSS</a>
-                            </nav>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                           aria-expanded="false">History of the Internet</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="domain.html">Domain names and ICANN</a></li>
+                            <li><a class="dropdown-item" href="address.html">IP Addresses, Packets and Routing</a></li>
+                            <li><a class="dropdown-item" href="dns.html">DNS</a></li>
+                            <li><a class="dropdown-item" href="protocols.html">HTTP and HTTPS protocols</a></li>
+                            <li><a class="dropdown-item" href="w3c.html">W3C and HTML and CSS</a></li>
                         </ul>
-                    </ul>
-                </div>
+                    </li>
+                </ul>
             </div>
         </div>
-    </header>
+    </nav>
 
     <main>
         <!-- Title -->
@@ -76,21 +73,22 @@
             </div>
         </section>
 
+        <!-- Cards -->
         <div class="album py-5 bg-light">
             <div class="container">
                 <div class="container text-center">
                     <hr>
                     <h4 class="text-secondary">History of the Internet</h4>
-                        <h5 class="text-secondary">In this section you can learn about how the internet was created
-                            and </h5>
+                    <h5 class="text-secondary">In this section you can learn about how the internet was created
+                        and </h5>
                 </div>
                 <div>
                     <div id="history" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                         <div class="col">
                             <div class="card shadow-sm">
-                                <img class="card-img-top" width="100%" height="275"
-                                     src="https://images.pexels.com/photos/159304/network-cable-ethernet-computer-159304.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                     alt="Invention of the Internet">
+                                <a href="invention.html"><img class="card-img-top" width="100%" height="275"
+                                                              src="https://images.pexels.com/photos/159304/network-cable-ethernet-computer-159304.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                                              alt="Invention of the Internet"></a>
                                 <div class="card-body">
                                     <h3>Invention of the Internet</h3>
                                     <p class="card-text">How did the internet begin, and how were its frameworks
@@ -98,7 +96,7 @@
                                         and implemented.</p>
                                     <div class="d-flex">
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-primary">Learn More</button>
+                                            <a href="invention.html" class="btn btn-sm btn-primary">Learn More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -106,9 +104,9 @@
                         </div>
                         <div class="col">
                             <div class="card shadow-sm">
-                                <img class="card-img-top" width="100%" height="275"
-                                     src="https://cdn.searchenginejournal.com/wp-content/uploads/2018/10/14-Great-Search-Engines-You-Can-Use-Instead-of-Google-1520x800.png"
-                                     alt="Searching the Internet">
+                                <a href="searching.html"><img class="card-img-top" width="100%" height="275"
+                                                              src="https://cdn.searchenginejournal.com/wp-content/uploads/2018/10/14-Great-Search-Engines-You-Can-Use-Instead-of-Google-1520x800.png"
+                                                              alt="Searching the Internet"></a>
                                 <div class="card-body">
                                     <h3>Searching the Internet</h3>
                                     <p class="card-text">How was the internet made searchable for everyone, and how did
@@ -117,7 +115,8 @@
                                         how we access information.</p>
                                     <div class="d-flex">
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-primary">Learn More</button>
+                                            <a href="searching.html" type="button" class="btn btn-sm btn-primary">Learn
+                                                More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -125,9 +124,9 @@
                         </div>
                         <div class="col">
                             <div class="card shadow-sm">
-                                <img class="card-img-top" width="100%" height="275"
-                                     src="https://wisewordsfrom.files.wordpress.com/2013/02/ie-vs-netscape.jpg"
-                                     alt="Browser Wars">
+                                <a href="browser.html"><img class="card-img-top" width="100%" height="275"
+                                                            src="https://wisewordsfrom.files.wordpress.com/2013/02/ie-vs-netscape.jpg"
+                                                            alt="Browser Wars"></a>
                                 <div class="card-body">
                                     <h3>Browser Wars</h3>
                                     <p class="card-text">How a little company out of nowhere grew to oppose the worlds
@@ -135,7 +134,8 @@
                                         provider.</p>
                                     <div class="d-flex">
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-primary">Learn More</button>
+                                            <a href="browser.html" type="button" class="btn btn-sm btn-primary">Learn
+                                                More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -144,9 +144,9 @@
 
                         <div class="col">
                             <div class="card shadow-sm">
-                                <img class="card-img-top" width="100%" height="275"
+                                <a href="bubble.html"><img class="card-img-top" width="100%" height="275"
                                      src="https://moneymorning.com/wp-content/blogs.dir/1/files/2015/06/shutterstock_162413930-1280x720.jpg"
-                                     alt="Dot Com Bubble">
+                                                           alt="Dot Com Bubble"></a>
                                 <div class="card-body">
                                     <h3>Dot Com Bubble</h3>
                                     <p class="card-text">What happens when the tech industry grew larger and faster than
@@ -154,7 +154,7 @@
                                         sustain?</p>
                                     <div class="d-flex">
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-primary">Learn More</button>
+                                            <a href="bubble.html" type="button" class="btn btn-sm btn-primary">Learn More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -162,9 +162,9 @@
                         </div>
                         <div class="col">
                             <div class="card shadow-sm">
-                                <img class="card-img-top" width="100%" height="275"
+                                <a href="people.html"><img class="card-img-top" width="100%" height="275"
                                      src="https://suethomasnet.files.wordpress.com/2009/03/4cb6d-6a00d83456d0f369e201116900d511970c-pi.jpg"
-                                     alt="Important People">
+                                                           alt="Important People"></a>
                                 <div class="card-body">
                                     <h3>Important People</h3>
                                     <p class="card-text">Who were the most influential people involved with the
@@ -173,7 +173,7 @@
                                         distribution of the internet.</p>
                                     <div class="d-flex">
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-primary">Learn More</button>
+                                            <a href="people.html" type="button" class="btn btn-sm btn-primary">Learn More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -185,22 +185,23 @@
                 <div class="container text-center mt-xl-4">
                     <hr>
                     <h4 class="text-secondary">How the Internet Works</h4>
-                        <h5 class="text-secondary">In this section you can learn about how the internet is maintained and regularly updated.</h5>
+                    <h5 class="text-secondary">In this section you can learn about how the internet is maintained and
+                        regularly updated.</h5>
                 </div>
                 <div>
                     <div id="works" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                         <div class="col">
                             <div class="card shadow-sm">
-                                <img class="card-img-top" width="100%" height="275"
+                                <a href="domain.html"><img class="card-img-top" width="100%" height="275"
                                      src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1191&q=80"
-                                     alt="Domain names and ICANN">
+                                                           alt="Domain names and ICANN"></a>
                                 <div class="card-body">
                                     <h3>Domain names and ICANN</h3>
                                     <p class="card-text">ICANN is an organization which is responsible for some of the
                                         most important protocols regarding IP Addresses and Domain Names.</p>
                                     <div class="d-flex">
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-primary">Learn More</button>
+                                            <a href="domain.html" type="button" class="btn btn-sm btn-primary">Learn More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -208,9 +209,9 @@
                         </div>
                         <div class="col">
                             <div class="card shadow-sm">
-                                <img class="card-img-top" width="100%" height="275"
+                                <a href="protocols.html"><img class="card-img-top" width="100%" height="275"
                                      src="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-                                     alt="HTTP and HTTPS protocols">
+                                                              alt="HTTP and HTTPS protocols"></a>
                                 <div class="card-body">
                                     <h3>HTTP and HTTPS protocols</h3>
                                     <p class="card-text">HTTP is the communication protocol used to pull information
@@ -218,7 +219,7 @@
                                         a breeze.</p>
                                     <div class="d-flex">
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-primary">Learn More</button>
+                                            <a href="protocols.html" type="button" class="btn btn-sm btn-primary">Learn More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -226,9 +227,9 @@
                         </div>
                         <div class="col">
                             <div class="card shadow-sm">
-                                <img class="card-img-top" width="100%" height="275"
+                                <a href="address.html"><img class="card-img-top" width="100%" height="275"
                                      src="https://images.unsplash.com/photo-1521542464131-cb30f7398bc6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1052&q=80"
-                                     alt="IP Addresses, Packets and Routing">
+                                                              alt="IP Addresses, Packets and Routing"></a>
                                 <div class="card-body">
                                     <h3>IP Addresses, Packets and Routing</h3>
                                     <p class="card-text">IP Addresses are unique identifiers which every networked
@@ -236,7 +237,7 @@
                                         networks.</p>
                                     <div class="d-flex">
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-primary">Learn More</button>
+                                            <a href="address.html" type="button" class="btn btn-sm btn-primary">Learn More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -245,16 +246,16 @@
 
                         <div class="col">
                             <div class="card shadow-sm">
-                                <img class="card-img-top" width="100%" height="275"
+                                <a href="w3c.html"><img class="card-img-top" width="100%" height="275"
                                      src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-                                     alt="W3C and HTML and CSS">
+                                                              alt="W3C and HTML and CSS"></a>
                                 <div class="card-body">
                                     <h3>W3C and HTML and CSS</h3>
                                     <p class="card-text">The W3C is the organization responsible for maintaining and
                                         developing standards and practices for web browsing.</p>
                                     <div class="d-flex">
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-primary">Learn More</button>
+                                            <a href="w3c.html" type="button" class="btn btn-sm btn-primary">Learn More</a>
                                         </div>
                                     </div>
                                 </div>
@@ -262,16 +263,16 @@
                         </div>
                         <div class="col">
                             <div class="card shadow-sm">
-                                <img class="card-img-top" width="100%" height="275"
+                                <a href="dns.html"><img class="card-img-top" width="100%" height="275"
                                      src="https://images.pexels.com/photos/276502/pexels-photo-276502.jpeg?cs=srgb&dl=pexels-pixabay-276502.jpg&fm=jpg"
-                                     alt="DNS">
+                                                              alt="DNS"></a>
                                 <div class="card-body">
                                     <h3>DNS</h3>
                                     <p class="card-text">DNS allows for the substitution of IP Addresses for Domain
                                         Names which makes finding and remembering websites exceptionally easy.</p>
                                     <div class="d-flex">
                                         <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-primary">Learn More</button>
+                                            <a href="dns.html" type="button" class="btn btn-sm btn-primary">Learn More</a>
                                         </div>
                                     </div>
                                 </div>
